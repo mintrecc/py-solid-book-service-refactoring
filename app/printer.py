@@ -5,7 +5,8 @@ from app.book import Book
 
 class PrintBook(ABC):
     @abstractmethod
-    def print_book(self, book: Book) -> None: ...
+    def print_book(self, book: Book) -> None:
+        pass
 
 
 class ConsolePrinter(PrintBook):

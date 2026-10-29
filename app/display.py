@@ -2,9 +2,11 @@ from abc import ABC, abstractmethod
 
 from app.book import Book
 
+
 class DisplayBook(ABC):
     @abstractmethod
-    def display(self, book: Book) -> None: ...
+    def display(self, book: Book) -> None:
+        pass
 
 
 class ConsoleDisplay(DisplayBook):

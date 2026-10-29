@@ -8,7 +8,7 @@ PRINTERS = {"console": ConsolePrinter, "reverse": ReversePrinter}
 SERIALIZERS = {"json": JSONSerializer, "xml": XMLSerializer}
 
 
-def _get(registry: dict, key: str, kind: str):
+def _get(registry: dict, key: str, kind: str) -> str:
     try:
         return registry[key]()
     except KeyError:
